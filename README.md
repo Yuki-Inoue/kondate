@@ -70,22 +70,22 @@ $ bundle exec kondate serverspec-role <role>
 │   │   └── base
 │   │       └── default.rb
 │   └── roles         # role recipes
-└── spec              # serverspec specs
-    ├── middleware    # middleware recipes specs
-    │   └── base_spec.rb
-    ├─  roles         # role recipes specs
-    └── spec_helper.rb
-├── secrets           # manages secrets attributes such as passwords
-│   ├── properties
-│   │   ├── environments
-│   │   ├── nodes
-│   │   └── roles
-│   ├── recipes
-│   │   ├── middleware
-│   │   └── roles
-│   └── spec
-│       ├── middleware
-│       └── roles
+├── spec              # serverspec specs
+│   ├── middleware    # middleware recipes specs
+│   │   └── base_spec.rb
+│   ├─  roles         # role recipes specs
+│   └── spec_helper.rb
+└── secrets           # manages secrets attributes such as passwords
+    ├── properties
+    │   ├── environments
+    │   ├── nodes
+    │   └── roles
+    ├── recipes
+    │   ├── middleware
+    │   └── roles
+    └── spec
+        ├── middleware
+        └── roles
 ```
 
 ### .kondate.conf
